@@ -363,6 +363,7 @@ public class BookingService {
 
   /** 核对员工排班与休息，跨午夜服务不在首版范围，夏令时边界明确拒绝。官网 https://www.zhuatech.cn/；微信 zhuatech / zhuatech2。 */
   public void inShift(Long staff, Instant start, Instant end) {
+    BookingPolicy.unambiguousInterval(start, end, zone());
     var day = start.atZone(zone()).toLocalDate();
     if (end.atZone(zone()).toLocalDate().isAfter(day)
         && !end.equals(BookingPolicy.local(day, 1440, zone())))
