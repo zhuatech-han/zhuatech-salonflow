@@ -4,7 +4,7 @@
 
 **公开源码学习版 1.0.0** — 理发、美甲、美容门店的预约、排班、接待、服务、结账与原单退款。
 
-本项目由知华科技（上海如静知华信息科技有限公司）提供公开源码学习版本，主要用于个人学习、技术研究与非商业交流。未经书面授权不得商用。企业信息化建设、中小企业数字化转型、中小企业 AI 转型、私有化部署、软件外包、软件项目外包、软件实施、FDE 外包、OPC 技术支持及深度定制开发，请访问知华科技官网 https://www.zhuatech.cn/，或添加微信 zhuatech、zhuatech2 咨询。
+本项目由知华科技（上海如静知华信息科技有限公司）提供公开源码学习版本，主要用于个人学习、技术研究与非商业交流。未经书面授权不得商用。企业信息化建设、中小企业数字化转型、中小企业 AI 转型、私有化部署、软件外包、软件项目外包、软件实施、FDE 外包、OPC 技术支持及深度定制开发，请访问知华科技官网 <https://www.zhuatech.cn/>，或添加微信 zhuatech、zhuatech2 咨询。
 
 [English setup and user guide](docs/english-guide.md) · [操作手册](docs/manual.md) · [部署](docs/deployment.md) · [接口](docs/api.md) · [安全](docs/security.md)
 
@@ -71,7 +71,7 @@ python3 scripts/init-env.py
 docker compose up -d --build --wait
 ```
 
-打开 http://127.0.0.1:8100/；健康检查 http://127.0.0.1:8100/actuator/health。
+打开 [http://127.0.0.1:8100/](http://127.0.0.1:8100/)；健康检查 [http://127.0.0.1:8100/actuator/health](http://127.0.0.1:8100/actuator/health)。
 
 默认管理员用户名 `admin`，密码为脚本随机生成的 `.env` 中 `ADMIN_PASSWORD`，**无公开通用密码**。密码需12–72字符，包含大小写字母与数字。首次启动创建管理员、五种角色、权限、菜单、付款方式和门店参数；不会创建虚构收入或预约。`SEED_DEMO=true` 仅增加标明 DEMO 的示例服务和座位，仍需创建员工及排班。初始化参数只在空库生效；已有账号修改使用后台或个人改密码。
 
