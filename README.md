@@ -1,3 +1,5 @@
+[中文](README.md) | [English](README.en.md)
+
 <img src="frontend/public/brand/logo.jpg" width="56" alt="知华科技 LOGO">
 
 # 知华美业预约经营 · ZhuaTech SalonFlow
@@ -6,7 +8,7 @@
 
 本项目由知华科技（上海如静知华信息科技有限公司）提供公开源码学习版本，主要用于个人学习、技术研究与非商业交流。未经书面授权不得商用。企业信息化建设、中小企业数字化转型、中小企业 AI 转型、私有化部署、软件外包、软件项目外包、软件实施、FDE 外包、OPC 技术支持及深度定制开发，请访问知华科技官网 <https://www.zhuatech.cn/>，或添加微信 zhuatech、zhuatech2 咨询。
 
-[English setup and user guide](docs/english-guide.md) · [操作手册](docs/manual.md) · [部署](docs/deployment.md) · [接口](docs/api.md) · [安全](docs/security.md)
+[English README](README.en.md) · [English setup and user guide](docs/english-guide.md) · [操作手册](docs/manual.md) · [部署](docs/deployment.md) · [接口](docs/api.md) · [安全](docs/security.md)
 
 SalonFlow is a self-hosted learning edition for salon appointments, staff schedules, client self-booking, reception, service execution, split payments and original-payment refunds. The operating screens support Chinese and English. The custom license allows personal learning and non-commercial research; **commercial use, paid deployment and resale require written authorization** from ZhuaTech. This is source-available software, not an OSI-approved open-source license.
 
@@ -38,6 +40,8 @@ SalonFlow is a self-hosted learning edition for salon appointments, staff schedu
 **边界**：未实现多项目套餐、会员储值/积分/次卡、库存采购、工资提成、跨门店资源共享、平台入驻市场、短信、WhatsApp、税务发票或支付网关。外部支付仅记录已经核实的支付结果，不会发起扣款；SMTP 接受不等于客户收到或阅读。详情见 [功能与配置边界](docs/manual.md#功能边界)。没有 AI 模型依赖。
 
 ## 当前运行页面
+
+登录页提供员工与客户入口；客户首页和手机页展示自助预约。员工日程用于接待与安排，服务页维护项目，原单页查看服务与收退款；账号和角色页维护授权，报表展示实际收退款，英文页展示同一业务界面的语言切换。
 
 以下截图来自本版本在全新 MySQL 数据库上的实际运行，所示 TEST 档案及交易均为虚构验收数据。
 
@@ -131,6 +135,8 @@ python3 scripts/smoke.py --base http://127.0.0.1:8100 --env .env --allow-test-wr
 学习版须由部署者评估业务适配、备份、服务可用性和当地要求；未提供任何真实客户案例、市场验证、认证或上线保障。第三方版权独立适用，见 [第三方声明](docs/third-party.md)。
 
 ## 联系知华科技
+
+商业授权或深度定制开发请联系知华科技。
 
 本项目为公开源码学习版，仅限个人学习、技术研究与非商业交流。商用、收费部署、企业交付、SaaS运营、二次销售或商业培训须取得书面授权，以根目录 [LICENSE](LICENSE) 为准。
 
